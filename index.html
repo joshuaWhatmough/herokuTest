@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <style>
+        .col-md-12{
+            background-color:darkgray;
+            bottom:0px;
+            border-radius: 3px;
+        }
+      </style>
+      
+  </head>
+  <body>
+      <div class="container-fluid">
+<!-- start of navbar -->
+    <nav role="navigation" class="navbar navbar-inverse">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">connect</a></li>
+<!-- TO-DO make connect a dropdown menu -->
+            <li><a href="#">link2</a></li>
+            <li><a href="#">link3</a></li>
+            <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+            <li class="disabled"><a href="#">admin</a></li>
+        </ul>
+          </div>
+      </nav>
+<!--end of nav bar -->
+<!--start of body content -->
+            <div class="col-md-4">
+                <div class="jumbotron">
+                <h2>Login Here</h2>
+                <form>
+                    Username:<br>
+                <input type="text" placeholder="Username"><br>
+                    Password:<br>
+                <input type="password" placeholder="Password"><br><br>
+                <input type="submit" class="btn btn-success" value="Login">
+                <a href="#" class="btn btn-info" data-toggle="modal" data-target="#registerModal">Register</a>
+<!-- TO-DO make the register button open a modal window with a form on it. -->
+                </form>
+                </div>
+              </div>
+              <div class="col-md-8">
+              <h1>Home</h1>
+                  <p>
+                  Example home page content.<br>
+                  </p>
+                  <div class="col-md-4">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Panel Title</h3>
+                      </div>
+                      <div class="panel-body">
+                        Panel content.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Panel Title</h3>
+                      </div>
+                      <div class="panel-body">
+                        Panel content.
+                      </div>
+                    </div>
+                  </div>                  
+                  <div class="col-md-4">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Panel Title</h3>
+                      </div>
+                      <div class="panel-body">
+                        Panel content.
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          
+<!-- end of main content-->
+<!-- footer. -->
+          <div class="col-md-12">
+            (c) Copyright. 
+          </div>
+<!-- end of footer-->
+      </div>
+      
+<!-- register modal window -->
+      <div id="registerModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+<!-- content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Register:</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Insert Registration form here later.</p>
+                </div>
+                <div class="modal-footer">
+                <input class="btn btn-success" value="Sign-Up">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+          </div>
+      </div>
+<!-- end of modal -->
+      
+      
+<!-- bootstrap and jquery JS files-->
+    <script src="jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
